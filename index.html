@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoHacks- Landing Page</title>
+    <!-- Link to CSS and Font Awesome for icons -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>TechnoHacks</h1>
+            <div id="clock" class="clock"></div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Our Company</h2>
+            <p>We provide top-notch solutions for your business needs. Let's grow together.</p>
+            <a href="#services" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="info-section">
+        <div class="container">
+            <h3>About Us</h3>
+            <p>Our company specializes in delivering high-quality services to help your business grow. With years of experience in the industry, we are your trusted partner for success.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="info-section">
+        <div class="container">
+            <h3>Our Services</h3>
+            <div class="service-list">
+                <div class="service-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Web Development</h4>
+                    <p>Custom website development tailored to your business needs.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Digital Marketing</h4>
+                    <p>Boost your online presence with our marketing strategies.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-cogs"></i>
+                    <h4>IT Consulting</h4>
+                    <p>Expert IT consulting services to optimize your business processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h3>Our Features</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Reliability</h4>
+                    <p>We deliver on our promises with consistency and dependability.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>Timely Delivery</h4>
+                    <p>Your projects are delivered on time, every time.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Expert Team</h4>
+                    <p>Our team consists of industry experts with years of experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="offers-section">
+        <div class="container">
+            <h3>Special Offers</h3>
+            <div class="offer-list">
+                <div class="offer-item">
+                    <h4>Summer Sale - 30% Off Web Development Services</h4>
+                    <p>Get a fully customized website with a 30% discount this summer. Offer valid until August 31st.</p>
+                </div>
+                <div class="offer-item">
+                    <h4>Free SEO Audit</h4>
+                    <p>Sign up for our digital marketing services and receive a free SEO audit of your website. Limited time offer.</p>
+                </div>
+                <div class="offer-item">
+                    <h4>Referral Program</h4>
+                    <p>Refer a friend and get a $100 credit towards your next project. Terms and conditions apply.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h3>What Our Clients Say</h3>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <p>"The team at TechnoHacks exceeded our expectations. Their professionalism and expertise are unmatched!"</p>
+                    <h4>- Sachin Yadav</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Our website's traffic has increased significantly thanks to their amazing digital marketing strategies."</p>
+                    <h4>- Kamlesh Roy</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"They provided us with the best IT solutions that streamlined our business processes."</p>
+                    <h4>- Rishab Singh</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to handle live clock -->
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = ${hours}:${minutes}:${seconds};
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to display the clock immediately
+    </script>
+</body>
+</html>
